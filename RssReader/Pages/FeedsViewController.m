@@ -9,7 +9,7 @@
 #import "FeedsViewController.h"
 #import "NewsViewController.h"
 #import "FeedCell.h"
-#import "StorageManager.h"
+#import "RealmStorageManager.h"
 
 @interface FeedsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *feedsTable;
@@ -25,13 +25,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    feeds = [[StorageManager sharedManager] getRssFeeds];
+    feeds = [[RealmStorageManager sharedManager] getRssFeeds];
    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     for (RssFeed *rssFeed in feeds) {
-        rssFeed.newsCount = [[StorageManager sharedManager] countForFeed:rssFeed.feedID];
+        rssFeed.newsCount = [[RealmStorageManager sharedManager] countForFeed:rssFeed.feedID];
     }
     
     [_feedsTable reloadData];

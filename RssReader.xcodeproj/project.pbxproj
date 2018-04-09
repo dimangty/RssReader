@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3C2A844BBDB052A59E0E33 /* libPods-RssReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F843B1741658D19BC5DF795 /* libPods-RssReader.a */; };
+		323C24EE2079C5A200B18295 /* FeedRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C24ED2079C5A200B18295 /* FeedRealm.m */; };
+		323C24F12079C6D600B18295 /* NewsRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 323C24F02079C6D600B18295 /* NewsRealm.m */; };
 		32418F5B2059528F00C551FB /* MYRefreshAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32418F4A2059528F00C551FB /* MYRefreshAnimationLayer.m */; };
 		32418F5C2059528F00C551FB /* MYRefreshAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32418F4C2059528F00C551FB /* MYRefreshAnimationView.m */; };
 		32418F5D2059528F00C551FB /* MYRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32418F4E2059528F00C551FB /* MYRefreshComponent.m */; };
@@ -31,13 +34,12 @@
 		326A01031F908B4A00D314DF /* RSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 326A01021F908B4A00D314DF /* RSSParser.m */; };
 		326A01071F908C4500D314DF /* RssCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 326A01061F908C4500D314DF /* RssCell.m */; };
 		326A010B1F908DC700D314DF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326A010A1F908DC700D314DF /* DetailViewController.m */; };
-		326A010F1F908FA400D314DF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 326A010D1F908FA400D314DF /* Model.xcdatamodeld */; };
-		326A01121F90910300D314DF /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 326A01111F90910300D314DF /* StorageManager.m */; };
 		326A01151F90928C00D314DF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326A01141F90928C00D314DF /* CoreData.framework */; };
 		327197941F90D859008C061D /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327197931F90D859008C061D /* FeedsViewController.m */; };
 		327197971F90D98B008C061D /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327197961F90D98B008C061D /* FeedCell.m */; };
 		3271979A1F90E066008C061D /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327197991F90E066008C061D /* NewsViewController.m */; };
 		328CD123205F931E00D01100 /* No_Connection.png in Resources */ = {isa = PBXBuildFile; fileRef = 328CD122205F931D00D01100 /* No_Connection.png */; };
+		32DDD293207B0501006DFD5F /* RealmStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD292207B0501006DFD5F /* RealmStorageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		323C24EC2079C5A200B18295 /* FeedRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedRealm.h; sourceTree = "<group>"; };
+		323C24ED2079C5A200B18295 /* FeedRealm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedRealm.m; sourceTree = "<group>"; };
+		323C24EF2079C6D600B18295 /* NewsRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsRealm.h; sourceTree = "<group>"; };
+		323C24F02079C6D600B18295 /* NewsRealm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsRealm.m; sourceTree = "<group>"; };
 		32418F482059528F00C551FB /* MYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYRefresh.h; sourceTree = "<group>"; };
 		32418F492059528F00C551FB /* MYRefreshAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYRefreshAnimationLayer.h; sourceTree = "<group>"; };
 		32418F4A2059528F00C551FB /* MYRefreshAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYRefreshAnimationLayer.m; sourceTree = "<group>"; };
@@ -107,14 +113,7 @@
 		326A01061F908C4500D314DF /* RssCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RssCell.m; sourceTree = "<group>"; };
 		326A01091F908DC700D314DF /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		326A010A1F908DC700D314DF /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		326A010E1F908FA400D314DF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		326A01101F90910300D314DF /* StorageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageManager.h; sourceTree = "<group>"; };
-		326A01111F90910300D314DF /* StorageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorageManager.m; sourceTree = "<group>"; };
 		326A01141F90928C00D314DF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		3271978C1F90B0F3008C061D /* Feeds+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Feeds+CoreDataClass.h"; sourceTree = "<group>"; };
-		3271978D1F90B0F3008C061D /* Feeds+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Feeds+CoreDataClass.m"; sourceTree = "<group>"; };
-		3271978E1F90B0F3008C061D /* Feeds+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Feeds+CoreDataProperties.h"; sourceTree = "<group>"; };
-		3271978F1F90B0F3008C061D /* Feeds+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Feeds+CoreDataProperties.m"; sourceTree = "<group>"; };
 		327197921F90D859008C061D /* FeedsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedsViewController.h; sourceTree = "<group>"; };
 		327197931F90D859008C061D /* FeedsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedsViewController.m; sourceTree = "<group>"; };
 		327197951F90D98B008C061D /* FeedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedCell.h; sourceTree = "<group>"; };
@@ -122,10 +121,11 @@
 		327197981F90E066008C061D /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		327197991F90E066008C061D /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		328CD122205F931D00D01100 /* No_Connection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = No_Connection.png; sourceTree = "<group>"; };
-		32A25DEB1F91D818002E10C8 /* News+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "News+CoreDataClass.h"; sourceTree = "<group>"; };
-		32A25DEC1F91D818002E10C8 /* News+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "News+CoreDataClass.m"; sourceTree = "<group>"; };
-		32A25DED1F91D818002E10C8 /* News+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "News+CoreDataProperties.h"; sourceTree = "<group>"; };
-		32A25DEE1F91D818002E10C8 /* News+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "News+CoreDataProperties.m"; sourceTree = "<group>"; };
+		32DDD291207B0501006DFD5F /* RealmStorageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmStorageManager.h; sourceTree = "<group>"; };
+		32DDD292207B0501006DFD5F /* RealmStorageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmStorageManager.m; sourceTree = "<group>"; };
+		63448276DFFEB82266A506E6 /* Pods-RssReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RssReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-RssReader/Pods-RssReader.release.xcconfig"; sourceTree = "<group>"; };
+		9F843B1741658D19BC5DF795 /* libPods-RssReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RssReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9415A7E6D486B800D57F4C /* Pods-RssReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RssReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RssReader/Pods-RssReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				326A01151F90928C00D314DF /* CoreData.framework in Frameworks */,
+				1A3C2A844BBDB052A59E0E33 /* libPods-RssReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +155,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		106ACE7738B1A9C86E62BF5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD9415A7E6D486B800D57F4C /* Pods-RssReader.debug.xcconfig */,
+				63448276DFFEB82266A506E6 /* Pods-RssReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3232019F1F9105D500403A42 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +219,7 @@
 				326A00EE1F908A1900D314DF /* RssReaderUITests */,
 				326A00C91F908A1900D314DF /* Products */,
 				326A01131F90928C00D314DF /* Frameworks */,
+				106ACE7738B1A9C86E62BF5A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,7 +240,7 @@
 				3232019F1F9105D500403A42 /* Classes */,
 				326A01081F908DA600D314DF /* Pages */,
 				326A00FD1F908AF900D314DF /* RSS */,
-				326A010C1F908F7F00D314DF /* Storage */,
+				32DDD294207B05B5006DFD5F /* RealmStorage */,
 				326A00CB1F908A1900D314DF /* AppDelegate.h */,
 				326A00CC1F908A1900D314DF /* AppDelegate.m */,
 				326A00CE1F908A1900D314DF /* ViewController.h */,
@@ -298,30 +309,26 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
-		326A010C1F908F7F00D314DF /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				3271978C1F90B0F3008C061D /* Feeds+CoreDataClass.h */,
-				3271978D1F90B0F3008C061D /* Feeds+CoreDataClass.m */,
-				3271978E1F90B0F3008C061D /* Feeds+CoreDataProperties.h */,
-				3271978F1F90B0F3008C061D /* Feeds+CoreDataProperties.m */,
-				326A010D1F908FA400D314DF /* Model.xcdatamodeld */,
-				32A25DEB1F91D818002E10C8 /* News+CoreDataClass.h */,
-				32A25DEC1F91D818002E10C8 /* News+CoreDataClass.m */,
-				32A25DED1F91D818002E10C8 /* News+CoreDataProperties.h */,
-				32A25DEE1F91D818002E10C8 /* News+CoreDataProperties.m */,
-				326A01101F90910300D314DF /* StorageManager.h */,
-				326A01111F90910300D314DF /* StorageManager.m */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
 		326A01131F90928C00D314DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				326A01141F90928C00D314DF /* CoreData.framework */,
+				9F843B1741658D19BC5DF795 /* libPods-RssReader.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DDD294207B05B5006DFD5F /* RealmStorage */ = {
+			isa = PBXGroup;
+			children = (
+				323C24EC2079C5A200B18295 /* FeedRealm.h */,
+				323C24ED2079C5A200B18295 /* FeedRealm.m */,
+				323C24EF2079C6D600B18295 /* NewsRealm.h */,
+				323C24F02079C6D600B18295 /* NewsRealm.m */,
+				32DDD291207B0501006DFD5F /* RealmStorageManager.h */,
+				32DDD292207B0501006DFD5F /* RealmStorageManager.m */,
+			);
+			path = RealmStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 326A00F41F908A1900D314DF /* Build configuration list for PBXNativeTarget "RssReader" */;
 			buildPhases = (
+				AF2EEA6AA13BADD3DA5C6BCB /* [CP] Check Pods Manifest.lock */,
 				326A00C41F908A1900D314DF /* Sources */,
 				326A00C51F908A1900D314DF /* Frameworks */,
 				326A00C61F908A1900D314DF /* Resources */,
@@ -453,6 +461,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF2EEA6AA13BADD3DA5C6BCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RssReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		326A00C41F908A1900D314DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -462,22 +491,23 @@
 				32418F632059528F00C551FB /* UIView+Position.m in Sources */,
 				326A00D01F908A1900D314DF /* ViewController.m in Sources */,
 				326A00DB1F908A1900D314DF /* main.m in Sources */,
+				32DDD293207B0501006DFD5F /* RealmStorageManager.m in Sources */,
 				326A01031F908B4A00D314DF /* RSSParser.m in Sources */,
 				327197941F90D859008C061D /* FeedsViewController.m in Sources */,
 				32418F602059528F00C551FB /* MYRefreshHeader.m in Sources */,
-				326A010F1F908FA400D314DF /* Model.xcdatamodeld in Sources */,
 				32418F612059528F00C551FB /* UIScrollView+MYExtension.m in Sources */,
 				3271979A1F90E066008C061D /* NewsViewController.m in Sources */,
 				32418F5D2059528F00C551FB /* MYRefreshComponent.m in Sources */,
 				326A00CD1F908A1900D314DF /* AppDelegate.m in Sources */,
 				32418F5E2059528F00C551FB /* MYRefreshConst.m in Sources */,
 				326A01071F908C4500D314DF /* RssCell.m in Sources */,
-				326A01121F90910300D314DF /* StorageManager.m in Sources */,
 				32418F5F2059528F00C551FB /* MYRefreshFooter.m in Sources */,
 				3265F036205A1BE3008830CB /* NetworkManager.m in Sources */,
 				327197971F90D98B008C061D /* FeedCell.m in Sources */,
+				323C24EE2079C5A200B18295 /* FeedRealm.m in Sources */,
 				3265F033205A1ACF008830CB /* Reachability.m in Sources */,
 				326A01001F908B1800D314DF /* RSSItem.m in Sources */,
+				323C24F12079C6D600B18295 /* NewsRealm.m in Sources */,
 				32418F5C2059528F00C551FB /* MYRefreshAnimationView.m in Sources */,
 				32418F622059528F00C551FB /* UIScrollView+MYRefresh.m in Sources */,
 				324965E31F91A79D0038F187 /* RssFeed.m in Sources */,
@@ -642,6 +672,7 @@
 		};
 		326A00F51F908A1900D314DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9415A7E6D486B800D57F4C /* Pods-RssReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: dimangty1@icloud.com (HEUJ4TELNK)";
@@ -660,6 +691,7 @@
 		};
 		326A00F61F908A1900D314DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63448276DFFEB82266A506E6 /* Pods-RssReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: dimangty1@icloud.com (HEUJ4TELNK)";
@@ -770,19 +802,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		326A010D1F908FA400D314DF /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				326A010E1F908FA400D314DF /* Model.xcdatamodel */,
-			);
-			currentVersion = 326A010E1F908FA400D314DF /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 326A00C01F908A1900D314DF /* Project object */;
 }

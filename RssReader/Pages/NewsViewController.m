@@ -9,7 +9,7 @@
 #import "NewsViewController.h"
 #import "DetailViewController.h"
 #import "RSSParser.h"
-#import "StorageManager.h"
+#import "RealmStorageManager.h"
 #import "RssCell.h"
 #import "RSSItem.h"
 
@@ -30,7 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = _currentFeed.feedName;
-    news = [[StorageManager sharedManager] getNewsForFeed:_currentFeed.feedID];
+    news = [[RealmStorageManager sharedManager] getNewsForFeed:_currentFeed.feedID];
     [self sortNews];
     
     _newsTable.my_header = [MYRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadMoreMethod)];
@@ -104,7 +104,7 @@
         
         for (RSSItem *rssItem in lastNews) {
             rssItem.feedID = feedID;
-            [[StorageManager sharedManager] addRssNews:rssItem];
+            [[RealmStorageManager sharedManager] addRssNews:rssItem];
         }
         
     } else {
@@ -128,7 +128,7 @@
         [loadedNews removeObjectsInArray:arr];
         
         for (RSSItem *rssItem in loadedNews) {
-            [[StorageManager sharedManager] addRssNews:rssItem];
+            [[RealmStorageManager sharedManager] addRssNews:rssItem];
             [news addObject:rssItem];
         }
     }
@@ -152,7 +152,7 @@
 - (void)sortNews {
     [news sortUsingComparator:^NSComparisonResult(RSSItem *obj1,RSSItem *obj2) {
         NSComparisonResult compareResult = [obj1.pubDate compare:obj2.pubDate];
-     
+        
         return compareResult;
     }];
 }

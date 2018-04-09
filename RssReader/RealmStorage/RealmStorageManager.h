@@ -1,19 +1,20 @@
 //
-//  StorageManager.h
+//  RealmStorageManager.h
 //  RssReader
 //
-//  Created by dima on 13.10.17.
-//  Copyright © 2017 dima. All rights reserved.
+//  Created by dima on 09.04.18.
+//  Copyright © 2018 dima. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "RssFeed.h"
 #import "RSSItem.h"
-#import <Foundation/Foundation.h>
-@interface StorageManager : NSObject
+
+@interface RealmStorageManager : NSObject
 + (id)sharedManager;
 
-- (BOOL)testFeeds;
 - (void)addRssFeed:(RssFeed *)rssFeed;
+- (BOOL)testFeeds;
 - (NSMutableArray *)getRssFeeds;
 
 - (void)addRssNews:(RSSItem *)rssItem;

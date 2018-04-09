@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "StorageManager.h"
+#import "RealmStorageManager.h"
 #import "NetworkManager.h"
 
 @interface AppDelegate ()
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [NetworkManager defaultNetworkManager];//init network manager
-    if ([[StorageManager sharedManager] testFeeds] == false) {//Storage Empty
+    if ([[RealmStorageManager sharedManager] testFeeds] == false) {//Storage Empty
         [self initStorage];
     }
     return YES;
@@ -31,23 +31,23 @@
     
     rssFeed.feedName = @"Lenta.ru";
     rssFeed.feedLink = @"https://lenta.ru/rss/last24";
-    [[StorageManager sharedManager] addRssFeed:rssFeed];
+    [[RealmStorageManager sharedManager] addRssFeed:rssFeed];
     
     rssFeed.feedName = @"Nasa";
     rssFeed.feedLink = @"https://www.nasa.gov/rss/dyn/breaking_news.rss";
-    [[StorageManager sharedManager] addRssFeed:rssFeed];
+    [[RealmStorageManager sharedManager] addRssFeed:rssFeed];
     
     rssFeed.feedName = @"Apple Hot News";
     rssFeed.feedLink = @"http://images.apple.com/main/rss/hotnews/hotnews.rss";
-    [[StorageManager sharedManager] addRssFeed:rssFeed];
+    [[RealmStorageManager sharedManager] addRssFeed:rssFeed];
     
     rssFeed.feedName = @"BBC News";
     rssFeed.feedLink = @"https://feeds.bbci.co.uk/news/rss.xml";
-    [[StorageManager sharedManager] addRssFeed:rssFeed];
+    [[RealmStorageManager sharedManager] addRssFeed:rssFeed];
     
     rssFeed.feedName = @"BBC News - World";
     rssFeed.feedLink = @"https://feeds.bbci.co.uk/news/world/rss.xml";
-    [[StorageManager sharedManager] addRssFeed:rssFeed];
+    [[RealmStorageManager sharedManager] addRssFeed:rssFeed];
     
 }
 
